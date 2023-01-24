@@ -1,8 +1,9 @@
 <?php
 //class
 class Mobil {
-    //ini class
+    public $roda;
 }
+
 
 //class dengan function
 class Mobil2
@@ -51,7 +52,7 @@ class Koneksi
 }
 
 $database = new Koneksi();
-$database->connect();
+$database->connect('','');
 
 
 ?>
