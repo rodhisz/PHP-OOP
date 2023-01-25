@@ -23,9 +23,19 @@ class Connection
         return new PDO(sprintf('mysql:host=%s;port=%d;dbname=%s', 
         $this->host, $this->port, $this->database), $this->username, $this->password);
     }
+    
 }
 $connection = new Connection('root', 'aden', 'quiz');
 $pdo = $connection->connect();
+
+class Connection2
+{
+    public function __construct()
+    {
+        //
+    }
+}
+
 
 ?>
 

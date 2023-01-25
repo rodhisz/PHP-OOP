@@ -61,13 +61,15 @@ class Mobil
 
 class Motor extends GlobalMobil
 {
-    public function Body(){
+    function Body(){
         echo $this->jumlahRoda();
     }
 }
 
 $Honda = new Motor();
 echo $Honda->Body()
+//halo
+
 
 // class Mobil
 // {
