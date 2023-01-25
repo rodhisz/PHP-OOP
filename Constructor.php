@@ -1,4 +1,5 @@
 <?php
+
 class Connection
 {
     private $host;
@@ -27,3 +28,4 @@ $connection = new Connection('root', 'aden', 'quiz');
 $pdo = $connection->connect();
 
 ?>
+
