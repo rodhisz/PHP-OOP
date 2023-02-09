@@ -48,8 +48,8 @@ class Connection
     public function connect($database, $username, $password,
     $host = 'localhost')
     {
-        throw new RuntimeException('Anda harus mengimplement
-        asikan method connect() sesuai dengan database driver yang Anda gunakan.');
+        throw new RuntimeException('Anda harus mengimplementasikan 
+        method connect() sesuai dengan database driver yang Anda gunakan.');
     }
 }
 

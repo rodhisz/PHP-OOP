@@ -38,7 +38,6 @@ class StringMutator
     }
 }
 
-
 $mutator = new StringMutator('Muhamad Surya Iksanudin');
 echo $mutator->bold(). PHP_EOL;
 echo $mutator->underline(). PHP_EOL;
@@ -48,6 +47,15 @@ echo $mutator->strike(). PHP_EOL;
 $mutator = new StringMutator('Muhamad Surya Iksanudin');
 echo $mutator->bold()->underline()->italic()->strike();
 
-// $this->db->select('*')->from('user')->where('id = 1')->get();
+
+echo (new StringMutator('Tebal'))->bold();
+echo '<br/>';
+echo (new StringMutator('Tebal dan Miring'))->bold()->italic();
+echo '<br/>';
+echo (new StringMutator('Tebal, Miring, dan Garis Bawah'))->bold()->italic()->underline();
+echo '<br/>';
+echo (new StringMutator('Dicoret'))->strike();
+echo '<br/>';
+
 
 ?>
