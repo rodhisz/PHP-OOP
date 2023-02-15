@@ -1,7 +1,7 @@
 <?php
 // filename: Api/Request.php
-// namespace Api;
-// use RequestInterface;
+namespace Api;
+use RequestInterface;
 
 class Request implements RequestInterface
 {
