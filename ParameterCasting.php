@@ -58,6 +58,7 @@ class ParameterCasting
     }
     public function intCast(int $intType)
     {
+        var_dump($intType);
     }
     public function floatCast(float $floatType)
     {
@@ -69,4 +70,4 @@ class ParameterCasting
 }
 $object = new ParameterCasting(array());
 $object->floatCast(1);
-$object->intCast(1.0);
+$object->intCast(1);
