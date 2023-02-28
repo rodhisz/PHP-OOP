@@ -14,5 +14,7 @@ class Fibonacci
 }
 // index dimulai dari 0
 // 0, 1, 1, 2, 3, 5, 8
-echo Fibonacci::calculate(6);
+echo Fibonacci::calculate(10);
 echo PHP_EOL;
+
+
