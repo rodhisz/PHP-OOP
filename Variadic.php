@@ -1,5 +1,5 @@
 <?php
-//1
+// 1
 // class Variadic
 // {
 //     public static function foo(int $number)
@@ -24,7 +24,7 @@
 // {
 //     public static function add(int ...$numbers)
 //     {
-//         return array_sum(›$numbers);
+//         return array_sum($numbers);
 //     }
 // }
 // echo Variadic::add(7, 9, 5, 6);
@@ -38,6 +38,6 @@ class Variadic
         return array_sum($numbers);
     }
 }
-$numbers = [7, 9, 5, 6];
+$numbers = [7, 9, 5, 6, 8, 9, 10];
 echo Variadic::add(...$numbers);
 echo PHP_EOL;

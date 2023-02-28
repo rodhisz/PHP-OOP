@@ -15,41 +15,41 @@
 //     }
 // }
 
-class Post
-{
-    private $title;
-    private $content;
-    public function __construct(string $title, string $content)
-    {
-        $this->title = $title;
-        $this->content = $content;
-    }
-    public function getTitle(): string
-    {
-        return $this->title;
-    }
-    public function getContent(): string
-    {
-        return $this->content;
-    }
-}
+// class Post
+// {
+//     private $title;
+//     private $content;
+//     public function __construct(string $title, string $content)
+//     {
+//         $this->title = $title;
+//         $this->content = $content;
+//     }
+//     public function getTitle(): string
+//     {
+//         return $this->title;
+//     }
+//     public function getContent(): string
+//     {
+//         return $this->content;
+//     }
+// }
 
-class PostMutator
-{
-    use StringMutator; //Pemanggilan _trait_
-    private $post;
-    public function __construct(Post $post)
-    {
-        $this->post = $post;
-    }
-    public function boldTitle(): string
-    {
-        return $this->bold($this->post->getTitle());
-    }
-}
-$postMutator = new PostMutator(new Post('Judul', 'Ini contoh content dari berita.'));
-echo $postMutator->boldTitle();
-echo $postMutator->boldTitle();
+// class PostMutator
+// {
+//     use StringMutator; //Pemanggilan _trait_
+//     private $post;
+//     public function __construct(Post $post)
+//     {
+//         $this->post = $post;
+//     }
+//     public function boldTitle(): string
+//     {
+//         return $this->bold($this->post->getTitle());
+//     }
+// }
+// $postMutator = new PostMutator(new Post('Judul', 'Ini contoh content dari berita.'));
+// echo $postMutator->boldTitle();
+// echo $postMutator->boldTitle();
 
 
 // class Post

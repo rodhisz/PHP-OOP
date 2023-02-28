@@ -12,13 +12,12 @@
 
 // class Errorable
 // {
-// public static function calculate(int $number)
-// {
-// return ($number % 0); //Bila menggunakan $number / 0 maka hanya akan memunculkan _warning_ bukan _error_
+//     public static function calculate(int $number)
+//     {
+//         return ($number % 0); //Bila menggunakan $number / 0 maka hanya akan memunculkan _warning_ bukan _error_
+//     }
 // }
-// }
-// Errorable::calculate(7);
-// echo 'Ini tidak dieksekusi';
+// echo Errorable::calculate(7);
 // echo PHP_EOL;
 
 // class Errorable
@@ -41,8 +40,7 @@
 // {
 //     public function connect()
 //     {
-//         throw new RuntimeException('Anda harus mengimplement
-//         asikan method connect() sesuai dengan database driver yang Anda gunakan.');
+//         throw new RuntimeException('Anda harus mengimplementasikan method connect() sesuai dengan database driver yang Anda gunakan.');
 //     }
 // }
 // try {
