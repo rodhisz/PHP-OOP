@@ -11,9 +11,9 @@ ew the LICENSE
 * file that was distributed with this source code.
 */
 
-declare(strict_types=1);
+// declare(strict_types=1);
 
-namespace ApiPlatform\Core\DataProvider;
+// namespace ApiPlatform\Core\DataProvider;
 
 use ApiPlatform\Core\Exception\ResourceClassNotSupportedException;
 
@@ -22,7 +22,7 @@ use ApiPlatform\Core\Exception\ResourceClassNotSupportedException;
  *
  * @author Kévin Dunglas <dunglas@gmail.com>
  */
-final class ChainCollectionDataProvider implements ContextAwareCollectionDataProviderInterface
+final class ChainCollectionDataProvider
 {
     private $dataProviders;
     /**
@@ -54,4 +54,9 @@ final class ChainCollectionDataProvider implements ContextAwareCollectionDataPro
         }
         return [];
     }
+}
+
+class A extends ChainCollectionDataProvider
+{
+    //ini ga bisa karna class parentnya final
 }
